@@ -4,7 +4,9 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.1.6"]
                  [hiccup "1.0.5"]
-                 [ring-server "0.3.1"]]
+                 [ring-server "0.3.1"]
+                 [com.datomic/datomic-free "0.9.4880.2"]
+                 [expectations "2.0.9"]]
   :plugins [[lein-ring "0.8.10"]]
   :ring {:handler compojure_experiment.handler/app
          :init compojure_experiment.handler/init

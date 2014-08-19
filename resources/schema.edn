@@ -1,0 +1,30 @@
+;; [entity attribute value time]
+;; this is a datomic datum or a fact
+
+[{:db/id #db/id[:db.part/db]
+  :db/ident :merchant/name
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/doc "A merchant's name"
+  :db.install/_attribute :db.par}
+
+  {:db/id #db/id[:db.part/db]
+  :db/ident : merchant/employees
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/many
+  :db/doc "All employees for one merchant"
+  :db.install/_attribute :db.par}
+
+  {:db/id #db/id[:db.part/db]
+  :db/ident :employee/name
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/doc "An employee's name"
+  :db.install/_attribute :db.par}
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :user/name
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/doc "A user's name"
+  :db.install/_attribute :db.par}]
